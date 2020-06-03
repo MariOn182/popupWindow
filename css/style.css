@@ -161,9 +161,11 @@ li {
     line-height: 24px;
 }
 
+
 .slider__item p:nth-child(2) {
     font-size: 24px;
     line-height: 32px;
+    margin-right: 50px;
 }
 
 
@@ -288,7 +290,7 @@ li {
     top: 0;
     background: #339900;
     color: #fff;
-    padding: 20px 15px;
+    padding: 25px 20px;
     font-weight: bold;
 }
 
@@ -304,7 +306,7 @@ li {
     font-family: "Roboto-Bold";
     src: url("../fonts/Roboto-Bold.ttf") format("truetype");
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 @font-face {
@@ -317,7 +319,7 @@ li {
 @font-face {
     font-family: "Rubic-Bold";
     src: url("../fonts/Rubik-Bold.ttf") format("truetype");
-    font-weight: 700;
+    font-weight: 800;
     font-style: normal;
 }
 
