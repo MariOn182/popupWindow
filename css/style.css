@@ -65,7 +65,7 @@ li {
 .popup__sidebar li {
     color: #777F82;
     cursor: pointer;
-    font-family: Rubic, sans-serif;
+    font-family: Roboto, sans-serif;
     position: relative;
     height: inherit;
 }
@@ -80,6 +80,7 @@ li {
     line-height: 20px;
     margin-left: 15px;
     opacity: 0.5;
+    font-family: Rubic, sans-serif;
 }
 
 .decorated:hover:after, .decorated:focus:after {
@@ -108,6 +109,7 @@ li {
 .popup__sidebar li > p:nth-child(2), .slider__item p:nth-child(2) {
     font-weight: bold;
     color: #333333;
+    font-family: Rubic, sans-serif;
 }
 
 .popup__sidebar li:hover a, .popup__sidebar li:focus a, .popup__sidebar li:hover p, .popup__sidebar li:focus p {
