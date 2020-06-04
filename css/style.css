@@ -25,6 +25,9 @@ li {
     font-family: Roboto, sans-serif;
     font-size: 16px;
     width: 960px;
+    box-shadow: 0 10px 9px -5px rgba(0,0,0,0.57);
+    -webkit-box-shadow: 0 10px 9px -5px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0 10px 9px -5px rgba(0,0,0,0.57);
 }
 
 .popup__close, .popup__close:before {
@@ -37,7 +40,7 @@ li {
 .popup__close {
     position: absolute;
     top: 17px;
-    right: 17px;
+    right: 25px;
     transform: rotate(-45deg);
     cursor: pointer;
     z-index: 2;
@@ -74,7 +77,7 @@ li {
     background: #339900;
 }
 
-.popup__sidebar li > a {
+.popup__sidebar li > p:first-child {
     color: #339900;
     font-size: 14px;
     line-height: 20px;
@@ -181,10 +184,26 @@ li {
     letter-spacing: 0.09em;
     cursor: pointer;
     outline: none;
+    font-family: Roboto, sans-serif;
 }
 
 .slider__item button:hover, .slider__item button:focus {
     background: #2f8200;
+}
+
+.slider__item:before{
+    content: "";
+    display: block;
+    background: #2f8200;
+    position: absolute;
+    height: 70px;
+    width: 1px;
+    top: -50px;
+}
+
+.scrolled {
+    overflow: auto;
+    height: 145px;
 }
 
 .preview__wrap {
@@ -228,15 +247,15 @@ li {
 }
 
 .slider__nav_left {
-    left: 10px;
+    left: 15px;
 }
 
 .slider__nav_right {
-    right: 10px;
+    right: 15px;
 }
 
 
-.slider__nav a, .slider__nav a:before, .slider__nav a:after {
+.slider__nav span, .slider__nav span:before, .slider__nav span:after {
     background: #FFFFFF;
     width: 20px;
     height: 2px;
@@ -246,7 +265,7 @@ li {
 }
 
 
-.slider__nav a:before {
+.slider__nav span:before {
     transform: rotate(40deg);
     content: "";
     display: block;
@@ -256,7 +275,7 @@ li {
     width: 15px;
 }
 
-.slider__nav a:after {
+.slider__nav span:after {
     transform: rotate(-40deg);
     content: "";
     display: block;
@@ -281,7 +300,7 @@ li {
     background: rgba(51, 153, 0, 0.38);
 }
 
-.popup__sidebar li, .preview div > img, .slider__nav {
+.popup__sidebar li, .preview div > img, .slider__nav, button {
     transition: 0.4s;
 }
 
@@ -305,7 +324,7 @@ li {
 }
 
 @font-face {
-    font-family: "Roboto-Bold";
+    font-family: "Roboto";
     src: url("../fonts/Roboto-Bold.ttf") format("truetype");
     font-style: normal;
     font-weight: 800;
@@ -319,7 +338,7 @@ li {
 }
 
 @font-face {
-    font-family: "Rubic-Bold";
+    font-family: "Rubic";
     src: url("../fonts/Rubik-Bold.ttf") format("truetype");
     font-weight: 800;
     font-style: normal;
