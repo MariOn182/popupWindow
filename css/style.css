@@ -16,6 +16,19 @@ li {
     list-style-type: none;
 }
 
+.wrap {
+    background: url("../img/site.png");
+}
+.wrap_light:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(219, 219, 219, 0.8) 0%, rgba(236, 232, 232, 0.5) 100%);
+    background-blend-mode: unset;
+    z-index: 1;
+}
+
 
 .popup {
     margin: 0 auto;
@@ -25,9 +38,10 @@ li {
     font-family: Roboto, sans-serif;
     font-size: 16px;
     width: 960px;
-    box-shadow: 0 10px 9px -5px rgba(0,0,0,0.57);
-    -webkit-box-shadow: 0 10px 9px -5px rgba(0,0,0,0.57);
-    -moz-box-shadow: 0 10px 9px -5px rgba(0,0,0,0.57);
+    box-shadow: 0 10px 9px -5px rgba(0, 0, 0, 0.57);
+    -webkit-box-shadow: 0 10px 9px -5px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0 10px 9px -5px rgba(0, 0, 0, 0.57);
+    z-index: 2;
 }
 
 .popup__close, .popup__close:before {
@@ -39,8 +53,8 @@ li {
 
 .popup__close {
     position: absolute;
-    top: 17px;
-    right: 25px;
+    top: 19px;
+    right: 31px;
     transform: rotate(-45deg);
     cursor: pointer;
     z-index: 2;
@@ -71,6 +85,7 @@ li {
     font-family: Roboto, sans-serif;
     position: relative;
     height: inherit;
+    padding-top: 5px;
 }
 
 .popup__sidebar li:hover, .popup__sidebar li:focus {
@@ -136,7 +151,7 @@ li {
     height: 1px;
     background: #339900;
     position: absolute;
-    top: 27px;
+    top: 30px;
 }
 
 .popup__sidebar li:hover:before, .popup__sidebar li:focus:before {
@@ -162,7 +177,7 @@ li {
 }
 
 .slider__item p {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     line-height: 24px;
 }
 
@@ -176,7 +191,7 @@ li {
 
 .slider__item button {
     text-transform: uppercase;
-    padding: 15px 50px;
+    padding: 12px 50px;
     color: #FFFFFF;
     background: #339900;
     border: none;
@@ -185,13 +200,15 @@ li {
     cursor: pointer;
     outline: none;
     font-family: Roboto, sans-serif;
+    line-height: 24px;
+    font-size: 16px;
 }
 
 .slider__item button:hover, .slider__item button:focus {
     background: #2f8200;
 }
 
-.slider__item:before{
+.slider__item:before {
     content: "";
     display: block;
     background: #2f8200;
@@ -208,7 +225,7 @@ li {
 
 .preview__wrap {
     position: absolute;
-    bottom: 40px;
+    bottom: 60px;
     left: 115px;
 }
 
@@ -242,7 +259,7 @@ li {
     border: 2px solid #FFFFFF;
     background: transparent;
     position: absolute;
-    bottom: 70px;
+    bottom: 80px;
     cursor: pointer;
 }
 
@@ -284,12 +301,12 @@ li {
     width: 16px;
 }
 
-.slider__nav_right a:before {
+.slider__nav_right span:before {
     transform: rotate(-40deg);
     left: 7px;
 }
 
-.slider__nav_right a:after {
+.slider__nav_right span:after {
     transform: rotate(40deg);
     left: 7px;
     width: 15px;
