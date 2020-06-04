@@ -236,7 +236,7 @@ li {
 .preview__wrap {
     position: absolute;
     bottom: 40px;
-    left: 115px;
+    left: 110px;
 }
 
 .preview {
@@ -250,7 +250,7 @@ li {
 }
 
 .preview div:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 35px;
 }
 
 .preview div > img {
